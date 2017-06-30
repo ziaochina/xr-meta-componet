@@ -22,21 +22,22 @@ export function getMeta(){
                 	component:'Button',
                 	children:'fewfewfew',
                 	onClick:'$$buttonClick',
-                	style:{width:100,height:100}
                 },{
                 	name:'input',
                 	component:'Input',
-                	style:{width:100,height:100},
                 	bindField:'form.input'
                 },{
                         name:'inputNumber',
                         component:'Input.Number',
-                        style:{width:100,height:100},
                 }, {
                         name: 'icon',
                         component: 'Icon',
                         type: 'github',
                         showStyle: 'showy'
+                },{
+                        name: 'DatePicker',
+                        component: 'DatePicker',
+                        bindField:'form.datepicker'
                 }]
 
         }

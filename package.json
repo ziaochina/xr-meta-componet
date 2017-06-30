@@ -1,6 +1,6 @@
 {
   "name": "xr-meta-component",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ziaochina/xr-meta-componet#readme",
   "dependencies": {
+    "moment": "^2.18.1",
     "omit.js": "^0.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

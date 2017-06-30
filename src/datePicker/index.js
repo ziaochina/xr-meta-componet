@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import {DatePicker} from 'xr-component'
 import MonthPicker from './monthPicker'
 import RangePicker from './rangePicker'
@@ -11,7 +12,7 @@ function handleChange(props){
 }
 
 function Comp(props){
-	return <DatePicker {...props} onChange={handleChange(props)} />
+	return <DatePicker {...props} value={moment(props.value, props.format)} onChange={handleChange(props)} />
 }
 
 Comp.MonthPicker = MonthPicker
