@@ -6,17 +6,18 @@ import * as api from './api'
 
 import appInfo from './index.app'
 
-const _r = reducer(appInfo)
+const _r = new reducer({appInfo})
 
 export function init(state, option) {
-	const meta = api.getMeta(),
-		data = {
-		}
+	const data = {}
+
 	return _r.init(state, {
-		meta,
 		data
 	})
 }
 
+export function buttonClick(state){
+	return _r.setField(state, 'form.input' ,'ddddddddd')
+}
 
 Object.assign(exports, {..._r, ...exports })

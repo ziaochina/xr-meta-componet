@@ -4,10 +4,12 @@ import {
 	componentFactory
 } from 'xr-meta-engine'
 
-//import _src from './src/index.app'
+import _src from './src/index.app'
 
-import metaComponents from 'xr-meta-component'
-/*
+import metaComponents from '../src'
+
+import './src/assets/style/index.less'
+
 config({
 	apps: {
 		[_src.name]: _src
@@ -16,8 +18,12 @@ config({
 	startAppName:'example'
 })
 
+let mmm = metaComponents
+
+debugger
+
 Object.keys(metaComponents).forEach(key=>{
-	componentFactory.registerAppComponent(key, metaComponents[key])
+	componentFactory.registerComponent(key, metaComponents[key])
 })
 
-start()*/
+start()

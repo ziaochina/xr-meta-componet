@@ -1,4 +1,6 @@
-import {Layout, Input, Button, Icon} from 'xr-component'
+import {Layout, Button, Icon} from 'xr-component'
+
+import Input from './input'
 
 export default {
 	Layout,
