@@ -12,8 +12,6 @@ var plugins = [
         template: './index.html', //html模板路径
         inject: true, //允许插件修改哪些内容，包括head与body`
     })
-
-   
 ]
 
 if (process.env.COMPRESS) {
@@ -26,7 +24,7 @@ if (process.env.COMPRESS) {
     );
 }
 
-plugins.push(new webpack.optimize.CommonsChunkPlugin(['vendor','com']))
+plugins.push(new webpack.optimize.CommonsChunkPlugin('vendor'))
 
 
 module.exports = {
@@ -34,8 +32,7 @@ module.exports = {
 
     entry: {
         bundle: ["./index.js"],
-        vendor: [ 'xr-component', 'xr-app-loader'],
-        com:["react", "react-dom"]
+        vendor: [ "react", "react-dom", 'xr-app-loader', 'xr-component', 'xr-meta-component'],
     },
 
     output: {

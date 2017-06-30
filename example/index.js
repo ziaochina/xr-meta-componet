@@ -6,7 +6,7 @@ import {
 
 import _src from './src/index.app'
 
-import metaComponents from '../src'
+import metaComponents from 'xr-meta-component'
 
 import './src/assets/style/index.less'
 

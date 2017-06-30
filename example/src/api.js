@@ -12,6 +12,11 @@ export function getMeta(){
         	name:'input',
         	component:'Input',
         	style:{width:100,height:100}
+        },{
+                name:'icon',
+                component:'Icon',
+                type:'github',
+                showStyle:'showy'
         }]
 
 	}
