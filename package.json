@@ -1,11 +1,12 @@
 {
   "name": "xr-meta-component",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "commit": "git add . && git commit -m 'zlj' &&  git push -u origin master",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -8,10 +8,10 @@ function handleChange(props){
 	}
 }
 
-function InputComponent(props){
+function Comp(props){
 	return <Input {...props} onChange={handleChange(props)} />
 }
 
-InputComponent.Number = InputNumber
+Comp.Number = InputNumber
 
-export default InputComponent
+export default Comp

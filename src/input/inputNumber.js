@@ -7,6 +7,6 @@ function handleChange(props){
 	}
 }
 
-export default function InputNumberComponent(props){
+export default function Comp(props){
 	return <Input.Number {...props} onChange={handleChange(props)} />
 }

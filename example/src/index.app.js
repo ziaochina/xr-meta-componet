@@ -15,6 +15,7 @@ export function getMeta(){
         return {
           	name: 'root',
                 component: 'Layout',
+                direction: 'row',
                 children:[{
                 	name:'button',
                 	type:'softly',
