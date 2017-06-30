@@ -12,6 +12,6 @@ function InputComponent(props){
 	return <Input {...props} onChange={handleChange(props)} />
 }
 
-InputComponent.InputNumber = InputNumber
+InputComponent.Number = InputNumber
 
 export default InputComponent
