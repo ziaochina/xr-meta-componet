@@ -71,6 +71,13 @@ export function getMeta() {
                         style: {
                                 width: 200
                         }
+                }, {
+                        name: 'Radio',
+                        component: 'Radio',
+                        bindField: 'form.Radio',
+                        style: {
+                                width: 200
+                        }
                 }]
 
         }
