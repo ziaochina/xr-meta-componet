@@ -64,6 +64,13 @@ export function getMeta() {
                         style: {
                                 width: 200
                         }
+                }, {
+                        name: 'Checkbox',
+                        component: 'Checkbox',
+                        bindField: 'form.Checkbox',
+                        style: {
+                                width: 200
+                        }
                 }]
 
         }

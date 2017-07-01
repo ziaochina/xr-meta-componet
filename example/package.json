@@ -11,8 +11,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "xr-app-loader": "^1.0.7",
-    "xr-meta-component": "^0.1.7",
+    "xr-app-loader": "^1.0.20",
+    "xr-meta-component": "^0.1.8",
     "xr-meta-engine": "^0.1.34"
   },
   "devDependencies": {
