@@ -1,5 +1,5 @@
 import React from 'react'
-import {Checkbox} from 'xr-component'
+import {Radio} from 'xr-component'
 
 
 function handleChange(props){
@@ -9,7 +9,7 @@ function handleChange(props){
 }
 
 function Comp(props){
-	return <Checkbox {...props}  onChange={handleChange(props)} />
+	return <Radio {...props}  onChange={handleChange(props)} />
 }
 
 
