@@ -4,9 +4,8 @@ import {Checkbox} from 'xr-component'
 
 
 function handleChange(props){
-	return (date, e)=>{
-		debugger
-		props.onEvent('onFieldChange', {path:props.path, value:v})	
+	return (e)=>{
+		props.onEvent('onFieldChange', {path:props.path, value:e.target.checked})	
 	}
 }
 
