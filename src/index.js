@@ -4,6 +4,7 @@ import Input from './input'
 import DatePicker from './datePicker'
 import Checkbox from './checkbox'
 import Radio from './radio'
+import Switch from './switch'
 
 export default {
 	Layout,
@@ -12,5 +13,6 @@ export default {
 	Icon,
 	DatePicker,
 	Checkbox, 
-	Radio
+	Radio,
+	Switch
 }
