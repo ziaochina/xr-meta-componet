@@ -85,6 +85,20 @@ export function getMeta() {
                         style: {
                                 width: 200
                         }
+                },{
+                        name: 'Rate',
+                        component: 'Rate',
+                        bindField: 'form.Rate',
+                        style: {
+                                width: 200
+                        }
+                },{
+                        name: 'Slider',
+                        component: 'Slider',
+                        bindField: 'form.Slider',
+                        style: {
+                                width: 200
+                        }
                 }]
 
         }
