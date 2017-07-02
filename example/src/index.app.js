@@ -113,6 +113,22 @@ export function getMeta() {
                                 component:'Button',
                                 children:'Upload'
                         }]
+                },{
+                        name:'Collapse',
+                        component:'Collapse',
+                        children:[{
+                                name:'Collapse.Panel1',
+                                component:'Collapse.Panel',
+                                header:'Collapse.Panel1',
+                                children:'ddd'
+
+                        },{
+                                name:'Collapse.Panel2',
+                                component:'Collapse.Panel',
+                                header:'Collapse.Panel2',
+                                children:'ddd'
+
+                        }]
                 }]
 
         }
