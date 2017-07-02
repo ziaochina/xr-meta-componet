@@ -78,6 +78,13 @@ export function getMeta() {
                         style: {
                                 width: 200
                         }
+                },{
+                        name: 'Switch',
+                        component: 'Switch',
+                        bindField: 'form.Switch',
+                        style: {
+                                width: 200
+                        }
                 }]
 
         }

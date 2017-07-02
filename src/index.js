@@ -5,6 +5,8 @@ import DatePicker from './datePicker'
 import Checkbox from './checkbox'
 import Radio from './radio'
 import Switch from './switch'
+import Rate from './rate'
+import Slider from './slider'
 
 export default {
 	Layout,
@@ -14,5 +16,7 @@ export default {
 	DatePicker,
 	Checkbox, 
 	Radio,
-	Switch
+	Switch,
+	Rate,
+	Slider
 }
