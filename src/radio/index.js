@@ -1,15 +1,15 @@
 import React from 'react'
-import {Switch} from 'xr-component'
+import {Radio} from 'xr-component'
 
 
 function handleChange(props){
-	return (checked)=>{
-		props.onEvent('onFieldChange', {path:props.path, value:checked})	
+	return (value)=>{
+		props.onEvent('onFieldChange', {path:props.path, value})	
 	}
 }
 
 function Comp(props){
-	return <Switch {...props}  onChange={handleChange(props)} />
+	return <Radio {...props}  onChange={handleChange(props)} />
 }
 
 
