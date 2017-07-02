@@ -16,6 +16,7 @@ export function getMeta() {
                 name: 'root',
                 component: 'Layout',
                 direction: 'row',
+                style:{flexWrap:'wrap'},
                 children: ["icon:", {
                         name: 'icon',
                         component: 'Icon',
@@ -99,6 +100,19 @@ export function getMeta() {
                         style: {
                                 width: 200
                         }
+                },{
+                        name: 'Card',
+                        component: 'Card',
+                        title:'Card',
+                        children:'fewfewfew'
+                },{
+                        name: 'Upload',
+                        component: 'Upload',
+                        children:[{
+                                name:'uploadbutton',
+                                component:'Button',
+                                children:'Upload'
+                        }]
                 }]
 
         }

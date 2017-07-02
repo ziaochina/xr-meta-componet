@@ -1,4 +1,4 @@
-import {Layout, Button, Icon, Upload, Card} from 'xr-component'
+import {Layout, Button, Icon, Upload, Card, Collapse} from 'xr-component'
 
 import Input from './input'
 import DatePicker from './datePicker'
@@ -20,5 +20,6 @@ export default {
 	Rate,
 	Slider,
 	Upload,
-	Card
+	Card,
+	Collapse
 }
