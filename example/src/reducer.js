@@ -1,23 +1,23 @@
 import { Map } from 'immutable'
 
-import { reducer } from 'xr-meta-engine'
+import { reducer as MetaReducer } from 'xr-meta-engine'
 
 import * as api from './api'
 
-import appInfo from './index.app'
+class reducer{
+	constructor(option){
+		this.metaReducer = option.metaReducer
+	}
 
-const _r = new reducer({appInfo})
-
-export function init(state, option) {
-	const data = {}
-
-	return _r.init(state, {
-		data
-	})
+	init = (state, option) => {
+		return this.metaReducer.init(state, {data:{}})
+	}
 }
 
-export function buttonClick(state){
-	return _r.setField(state, 'form.input' ,'ddddddddd')
-}
+export default function creator(option){
+	const metaReducer = new MetaReducer(option),
+		o = new reducer({...option, metaReducer})
 
-Object.assign(exports, {..._r, ...exports })
+	return {...metaReducer, ...o}
+
+}

@@ -18,10 +18,6 @@ config({
 	startAppName:'example'
 })
 
-let mmm = metaComponents
-
-debugger
-
 Object.keys(metaComponents).forEach(key=>{
 	componentFactory.registerComponent(key, metaComponents[key])
 })

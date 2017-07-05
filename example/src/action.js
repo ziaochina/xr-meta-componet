@@ -1,24 +1,23 @@
-import { action } from 'xr-meta-engine'
+import { action as MetaAction } from 'xr-meta-engine'
 
-import appInfo from './index.app'
+class action {
+	constructor(option){
+		this.metaAction = option.metaAction
+	}
 
-const metaHandlers = {
-	onInit:init,
-	buttonClick:buttonClick
+	onInit = ({component, injections}) =>{
+		this.component = component
+		this.injections = injections
+		injections.reduce('init')
+	}
 }
 
-const _a = new action({ appInfo, metaHandlers})
+export default function creator(option){
+	const metaAction = new MetaAction(option),
+		o = new action({...option, metaAction}),
+		ret = {...metaAction, ...o}
 
-var _i
+	metaAction.config({ metaHandlers:ret})
 
-function init({ component, injections}) {
-	_i = injections
-	_i.reduce('init')
+	return ret
 }
-
-function buttonClick(){
-	_i.reduce('buttonClick')
-}
-
-
-Object.assign(exports, {..._a, ...exports })

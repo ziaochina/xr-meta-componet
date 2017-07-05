@@ -17,7 +17,15 @@ export function getMeta() {
                 component: 'Layout',
                 direction: 'row',
                 style:{flexWrap:'wrap'},
-                children: ["icon:", {
+                children: [{
+                        name:'a',
+                        component:'::a',
+                        children:'fewfew'
+                },{
+                        name:'input',
+                        component:'::input',
+                        value:'fewfew'
+                },"icon:", {
                         name: 'icon',
                         component: 'Icon',
                         type: 'github',
@@ -27,7 +35,6 @@ export function getMeta() {
                         type: 'softly',
                         component: 'Button',
                         children: 'fewfewfew',
-                        onClick: '$$buttonClick',
                         style: {
                                 width: 120
                         }
@@ -128,6 +135,21 @@ export function getMeta() {
                                 header:'Collapse.Panel2',
                                 children:'ddd'
 
+                        }]
+                },{
+                        name:'Menu',
+                        component:'Menu',
+                        mode:'inline',
+                        style:{width:180},
+                        children:[{
+                                name:'submenu1',
+                                component:'Menu.SubMenu',
+                                title:'submenu1',
+                                children:[{
+                                        name:'menuItem',
+                                        component:'Menu.Item',
+                                        children:'fewfew'
+                                }]
                         }]
                 }]
 
