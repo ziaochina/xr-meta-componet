@@ -1,4 +1,4 @@
-import {Layout, Button, Icon, Upload, Card, Collapse, Menu, Tabs, Toast, Notification, Modal} from 'xr-component'
+import {Layout, Button, Icon, Upload, Card, Collapse, Menu, Tabs, Toast, Notification, Modal, DataGrid} from 'xr-component'
 
 import Input from './input'
 import DatePicker from './datePicker'
@@ -27,5 +27,6 @@ export default {
 	Tabs,
 	Toast,
 	Notification,
-	Modal
+	Modal,
+	DataGrid
 }

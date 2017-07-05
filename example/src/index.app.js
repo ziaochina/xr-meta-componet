@@ -175,6 +175,24 @@ export function getMeta() {
                         style:{width:100},
                         children:'confirm',
                         onClick:"{{$onConfirm}}"
+                },{
+                        name:'datagrid',
+                        component:'DataGrid',
+                        headerHeight:35,
+                        rowsCount:100,
+                        rowHeight:35,
+                        footerHeight:35,
+
+                        columns:[{
+                                columnKey:'code',
+                                header:{
+                                        name:'codeHeader',
+                                        component:'DataGird.Cell',
+                                        children:'code'
+                                },
+                                width:200
+
+                        }]
                 }]
 
         }
