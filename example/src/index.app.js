@@ -151,6 +151,30 @@ export function getMeta() {
                                         children:'fewfew'
                                 }]
                         }]
+                },{
+                        name:'toast',
+                        component:'Button',
+                        style:{width:100},
+                        children:'toast',
+                        onClick:"{{$onToast}}"
+                },{
+                        name:'notification',
+                        component:'Button',
+                        style:{width:100},
+                        children:'notification',
+                        onClick:"{{$onNotification}}"
+                },{
+                        name:'modal',
+                        component:'Button',
+                        style:{width:100},
+                        children:'modal',
+                        onClick:"{{$onModal}}"
+                },{
+                        name:'confirm',
+                        component:'Button',
+                        style:{width:100},
+                        children:'confirm',
+                        onClick:"{{$onConfirm}}"
                 }]
 
         }

@@ -15,7 +15,10 @@ config({
 		[_src.name]: _src
 	},
 	targetDomId:'app',
-	startAppName:'example'
+	startAppName:'example',
+	toast:metaComponents.Toast,
+	notification:metaComponents.Notification,
+	modal:metaComponents.Modal
 })
 
 Object.keys(metaComponents).forEach(key=>{
