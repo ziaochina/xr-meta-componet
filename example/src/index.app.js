@@ -182,7 +182,6 @@ export function getMeta() {
                         rowsCount:100,
                         rowHeight:35,
                         footerHeight:35,
-
                         columns:[{
                                 columnKey:'code',
                                 header:{

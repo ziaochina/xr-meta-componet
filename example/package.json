@@ -12,8 +12,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "xr-app-loader": "^1.0.27",
-    "xr-meta-component": "^0.1.21",
-    "xr-meta-engine": "^0.1.46"
+    "xr-meta-component": "^0.1.22",
+    "xr-meta-engine": "^0.1.52"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
