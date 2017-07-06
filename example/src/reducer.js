@@ -10,7 +10,12 @@ class reducer{
 	}
 
 	init = (state, option) => {
-		return this.metaReducer.init(state, {data:{}})
+		const data = {data:{datagrid:[]}}
+		for(let i = 0 ;i <100; i ++){
+			data.data.datagrid.push({code:`code${i}`, name:`name${i}`})
+		}
+
+		return this.metaReducer.init(state, data)
 	}
 }
 

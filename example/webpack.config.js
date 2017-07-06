@@ -4,9 +4,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 var plugins = [
-    new webpack.DefinePlugin({
+    /*new webpack.DefinePlugin({
         "process.env.NODE_ENV": JSON.stringify('production')
-    }),
+    }),*/
     new HtmlWebpackPlugin({
         filename: './index.html', //生成的html存放路径，相对于 path
         template: './index.html', //html模板路径

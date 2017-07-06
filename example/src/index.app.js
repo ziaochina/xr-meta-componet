@@ -39,7 +39,7 @@ export function getMeta() {
                                 width: 120
                         }
                 },"Input:", {
-                        name: 'input',
+                        name: 'input1',
                         component: 'Input',
                         bindField: 'form.input',
                         style: {
@@ -176,22 +176,81 @@ export function getMeta() {
                         children:'confirm',
                         onClick:"{{$onConfirm}}"
                 },{
-                        name:'datagrid',
-                        component:'DataGrid',
-                        headerHeight:35,
-                        rowsCount:100,
-                        rowHeight:35,
-                        footerHeight:35,
-                        columns:[{
-                                columnKey:'code',
-                                header:{
-                                        name:'codeHeader',
-                                        component:'DataGird.Cell',
-                                        children:'code'
-                                },
-                                width:200
+                        name:'dataGridContainder',
+                        component:'::div',
+                        style:{width:500, height:300, display:'flex'},
+                        children:[{
+                                name:'datagrid',
+                                component:'DataGrid',
+                                headerHeight:35,
+                                rowsCount:100,
+                                rowHeight:35,
+                                footerHeight:35,
+                                columns:[{
+                                        columnKey:'select',
+                                        name:'select',
+                                        component:'DataGrid.Column',
+                                        header:{
+                                               name:'selectHeader',
+                                               component:'DataGrid.Cell',
+                                               children:{
+                                                        name:'selectHeaderInternal',
+                                                        component:'Checkbox'
+                                               }
+                                        },
+                                        cell:"{{$getSelectCell}}",
+                                        width:50
+                                },{
+                                        columnKey:'oprate',
+                                        name:'oprate',
+                                        component:'DataGrid.Column',
+                                        header:{
+                                                name:'codeHeader',
+                                                component:'DataGrid.Cell',
+                                                children:'oprate'
+                                        },
+                                        cell:"{{$getOprateCell}}",
+                                        width:50
 
+                                },{
+                                        columnKey:'code',
+                                        name:'code',
+                                        component:'DataGrid.Column',
+                                        flexGrow:1,
+                                        header:{
+                                                name:'codeHeader',
+                                                component:'DataGrid.Cell',
+                                                children:'code'
+                                        },
+                                        cell:"{{$getCodeCell}}",
+                                        footer:{
+                                                 name:'codeFooter',
+                                                component:'DataGrid.Cell',
+                                                children:'total'
+                                        },
+                                        width:200
+
+                                },{
+                                        columnKey:'name',
+                                        name:'name',
+                                        component:'DataGrid.Column',
+                                        flexGrow:1,
+                                        header:{
+                                                name:'nameHeader',
+                                                component:'DataGrid.Cell',
+                                                children:'name'
+                                        },
+                                        cell:"{{$getNameCell}}",
+                                        footer:{
+                                                 name:'nameFooter',
+                                                component:'DataGrid.Cell',
+                                                children:'total'
+                                        },
+                                        width:200
+
+                                }]
                         }]
+                        
                 }]
 
         }
