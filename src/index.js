@@ -1,12 +1,5 @@
-import {Layout, Button, Icon, Upload, Card, Collapse, Menu, Tabs, Toast, Notification, Modal, DataGrid} from 'xr-component'
+import {Input,DatePicker, Radio, Switch, Rate, Slider,Layout, Button, Icon, Upload, Card, Collapse, Menu, Tabs, Toast, Notification, Modal, DataGrid, Checkbox} from 'xr-component'
 
-import Input from './input'
-import DatePicker from './datePicker'
-import Checkbox from './checkbox'
-import Radio from './radio'
-import Switch from './switch'
-import Rate from './rate'
-import Slider from './slider'
 
 
 export default {

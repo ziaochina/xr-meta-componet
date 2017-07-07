@@ -41,31 +41,14 @@ class action {
 		console.log(r)
 	}
 
-	getSelectCell = ({rowInddex}) =>{
-		return (
-			<DataGrid.Cell >
-				<Checkbox />
-			</DataGrid.Cell>
-		)
-	}
-
-	getOprateCell = ({rowIndex}) =>{
-		return (
-			<DataGrid.Cell >
-				<Icon type='github' showStyle='showy' style={{marginRight:8}}/>
-				<Icon type='github' showStyle='softly'/>
-			</DataGrid.Cell>
-		)
-	}
-
-	getCodeCell = ({rowIndex})=>{
-		const code = this.metaAction.gf(`data.datagrid.${rowIndex}.code`)
-		return <DataGrid.Cell>{code}</DataGrid.Cell>
-	}
 
 	getNameCell = ({rowIndex})=>{
 		const name = this.metaAction.gf(`data.datagrid.${rowIndex}.name`)
 		return <DataGrid.Cell>{name}</DataGrid.Cell>
+	}
+
+	dataGridSelectChange = (...args)=>{
+		debugger
 	}
 }
 
