@@ -205,7 +205,8 @@ export function getMeta() {
                                                 children:{
                                                         name:'checkbox',
                                                         component:'Checkbox',
-                                                        onChange:'{{$dataGridSelectChange}}'
+                                                        onChange:'{{$dataGridSelectChange}}',
+                                                        _visible:'{{$getDataGridSelect()}}'
                                                 }
                                         },
                                         width: 50

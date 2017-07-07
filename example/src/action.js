@@ -48,7 +48,16 @@ class action {
 	}
 
 	dataGridSelectChange = (...args)=>{
+
+		const o = args
 		debugger
+	}
+
+	getDataGridSelect = ({rowIndex})=>{
+		if(rowIndex == 1)
+			return false
+
+		return true
 	}
 }
 
